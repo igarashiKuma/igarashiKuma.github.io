@@ -1,0 +1,393 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>0903 版本管理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="Svn.html" />
+    
+    
+    <link rel="prev" href="UtanDevelopGuide.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    第一周 0901 0903
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="ScrumAgileThought.html">
+            
+                <a href="ScrumAgileThought.html">
+            
+                    
+                    0901 Scrum敏捷思想
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="UtanDevelopGuide.html">
+            
+                <a href="UtanDevelopGuide.html">
+            
+                    
+                    0901 友田开发规范
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.3" data-path="VersionControl.html">
+            
+                <a href="VersionControl.html">
+            
+                    
+                    0903 版本管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="Svn.html">
+            
+                <a href="Svn.html">
+            
+                    
+                    0903 Svn
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="Git.html">
+            
+                <a href="Git.html">
+            
+                    
+                    0903 Git
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >0903 版本管理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7248;&#x672C;&#x7BA1;&#x7406;">&#x7248;&#x672C;&#x7BA1;&#x7406;</h1>
+<h2 id="&#x542B;&#x4E49;">&#x542B;&#x4E49;</h2>
+<blockquote>
+<p>&#x6EE1;&#x8DB3;&#x4E0D;&#x540C;&#x9700;&#x6C42;&#xFF0C;&#x5BF9;&#x540C;&#x4E00;&#x4EA7;&#x54C1;&#x6216;&#x7CFB;&#x7EDF;&#x8FDB;&#x884C;&#x5C40;&#x90E8;&#x7684;&#x6539;&#x8FDB;&#x548C;&#x6539;&#x8FDB;&#x6240;&#x4EA7;&#x751F;&#x7684;&#x7684;&#x4EA7;&#x54C1;&#x6216;&#x7CFB;&#x7EDF;&#x7CFB;&#x5217;&#x7684;&#x53D8;&#x66F4;&#x60C5;&#x51B5;&#x8FDB;&#x884C;&#x8BB0;&#x5F55;&#x3001;&#x8DDF;&#x8E2A;&#x3001;&#x7EF4;&#x62A4;&#x548C;&#x63A7;&#x5236;&#x7684;&#x8FC7;&#x7A0B;</p>
+</blockquote>
+<h2 id="&#x4EC0;&#x4E48;&#x662F;&#x7248;&#x672C;">&#x4EC0;&#x4E48;&#x662F;&#x7248;&#x672C;</h2>
+<blockquote>
+<p>&#x6570;&#x5B57;&#x4EA7;&#x54C1;&#x5728;&#x4E0D;&#x65AD;&#x66F4;&#x65B0;&#x548C;&#x6F14;&#x8FDB;&#xFF0C;&#x800C;&#x5DF2;&#x7ECF;&#x9762;&#x5411;&#x5E02;&#x573A;&#x7684;&#x201C;&#x65E7;&#x7248;&#x201D;&#x4ECD;&#x9700;&#x8981;&#x7EF4;&#x62A4;&#xFF0C;&#x8FD9;&#x4E9B;&#x201C;&#x65E7;&#x7248;&#x201D;&#x5C31;&#x662F;&#x8F6F;&#x4EF6;&#x884C;&#x4E1A;&#x5B9A;&#x4E49;&#x7684;&#x7248;&#x672C;</p>
+</blockquote>
+<h2 id="&#x9700;&#x6C42;">&#x9700;&#x6C42;</h2>
+<blockquote>
+<ul>
+<li>&#x9700;&#x8981;&#x4FEE;&#x590D;&#xFF1A;&#x201C;&#x65E7;&#x7248;&#x201D;&#x5B58;&#x5728;&#x7684;&#x95EE;&#x9898;&#x9700;&#x8981;&#x4FEE;&#x590D;</li>
+<li>&#x9700;&#x8981;&#x56DE;&#x9000;&#xFF1A;&#x65B0;&#x65B9;&#x5411;&#x5C1D;&#x8BD5;&#x5931;&#x8D25;&#xFF0C;&#x56DE;&#x9000;&#x81F3;&#x4EE5;&#x524D;&#x7248;&#x672C;</li>
+<li>&#x9700;&#x8981;&#x878D;&#x5408;&#xFF1A;&#x521B;&#x65B0;&#x6027;&#x5C1D;&#x8BD5;&#x548C;&#x4E3B;&#x4F53;&#x7684;&#x878D;&#x5408;</li>
+</ul>
+</blockquote>
+<h2 id="&#x4E3B;&#x8981;&#x5DE5;&#x4F5C;">&#x4E3B;&#x8981;&#x5DE5;&#x4F5C;</h2>
+<blockquote>
+<ul>
+<li>&#x5206;&#x652F;&#xFF1A;&#x6CBF;&#x65F6;&#x95F4;&#x7EBF;&#x5F62;&#x6210;&#x7684;&#x5907;&#x4EFD;&#x5217;&#x8868;</li>
+<li>&#x5408;&#x5E76;&#xFF1A;&#x4EA7;&#x54C1;&#x7EDF;&#x4E00;&#x7684;&#x8FC7;&#x7A0B;</li>
+<li>&#x68C0;&#x51FA;&#xFF1A;&#x627E;&#x51FA;&#x201C;&#x65E7;&#x7248;&#x201D;&#x7684;&#x8FC7;&#x7A0B;</li>
+<li>&#x68C0;&#x5165;&#xFF1A;&#x4FEE;&#x6539;&#x5B8C;&#x6210;&#x540E;&#x91CD;&#x65B0;&#x5907;&#x4EFD;&#x7684;&#x8FC7;&#x7A0B;</li>
+</ul>
+</blockquote>
+<h2 id="&#x7BA1;&#x7406;&#x65B9;&#x5F0F;">&#x7BA1;&#x7406;&#x65B9;&#x5F0F;</h2>
+<h3 id="&#x96C6;&#x4E2D;&#x5F0F;">&#x96C6;&#x4E2D;&#x5F0F;</h3>
+<blockquote>
+<ul>
+<li>&#x7BA1;&#x7406;&#x65B9;&#x5F0F;<ul>
+<li>&#x4ED3;&#x5E93;&#x653E;&#x7F6E;&#x4E8E;&#x670D;&#x52A1;&#x5668;</li>
+<li>&#x5DE5;&#x4F5C;&#x4EBA;&#x5458;&#x53D6;&#x51FA;&#x4E00;&#x4EFD;&#x653E;&#x5165;&#x68C0;&#x51FA;&#x533A;</li>
+<li>&#x590D;&#x5236;&#x68C0;&#x51FA;&#x533A;&#x5185;&#x5BB9;&#x5230;&#x7F16;&#x8F91;&#x533A;&#x8FDB;&#x884C;&#x7F16;&#x8F91;</li>
+<li>&#x5C06;&#x7F16;&#x8F91;&#x533A;&#x7248;&#x672C;&#x4E0A;&#x4F20;</li>
+</ul>
+</li>
+<li>&#x4F18;&#x70B9;<ul>
+<li>&#x4FDD;&#x5BC6;</li>
+<li>&#x5B89;&#x5168;</li>
+<li>&#x7B80;&#x5355;</li>
+</ul>
+</li>
+<li>&#x7F3A;&#x70B9;<ul>
+<li>&#x5FC5;&#x987B;&#x8FDE;&#x63A5;&#x670D;&#x52A1;&#x5668;&#x624D;&#x80FD;&#x5907;&#x4EFD;</li>
+<li>&#x5408;&#x5E76;&#x4ED6;&#x4EBA;&#x7248;&#x672C;&#x65F6;&#x4F1A;&#x4E22;&#x5931;&#x7F16;&#x8F91;&#x4E2D;&#x7684;&#x6210;&#x679C;</li>
+<li>&#x4E0D;&#x80FD;&#x81EA;&#x7531;&#x5EFA;&#x7ACB;&#x5206;&#x652F;</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<h3 id="&#x5206;&#x5E03;&#x5F0F;">&#x5206;&#x5E03;&#x5F0F;</h3>
+<blockquote>
+<ul>
+<li>&#x7BA1;&#x7406;&#x65B9;&#x5F0F;<ul>
+<li>&#x4ED3;&#x5E93;&#x653E;&#x7F6E;&#x4E8E;&#x670D;&#x52A1;&#x5668;</li>
+<li>&#x5DE5;&#x4F5C;&#x4EBA;&#x5458;&#x5728;&#x672C;&#x673A;&#x590D;&#x5236;&#x4E00;&#x4EFD;&#x4ED3;&#x5E93;</li>
+<li>&#x5C06;&#x4E00;&#x4EFD;&#x7248;&#x672C;&#x653E;&#x5230;&#x6682;&#x5B58;&#x533A;</li>
+<li>&#x5B8C;&#x6210;&#x7F16;&#x8F91;&#x540E;&#x5C06;&#x6682;&#x5B58;&#x533A;&#x7684;&#x7248;&#x672C;&#x5B58;&#x5165;&#x7248;&#x672C;&#x5E93;</li>
+<li>&#x5C06;&#x672C;&#x5730;&#x4ED3;&#x5E93;&#x5185;&#x5BB9;&#x4E0A;&#x4F20;&#x5230;&#x670D;&#x52A1;&#x5668;&#x4ED3;&#x5E93;</li>
+</ul>
+</li>
+<li>&#x4F18;&#x70B9;<ul>
+<li>&#x79BB;&#x7EBF;&#x5E76;&#x81EA;&#x7531;&#x7684;&#x5DE5;&#x4F5C;</li>
+<li>&#x5B89;&#x5168;&#x7684;&#x5408;&#x5E76;</li>
+<li>&#x81EA;&#x7531;&#x7684;&#x521B;&#x5EFA;&#x5206;&#x652F;&#xFF0C;&#x5E76;&#x884C;&#x5F00;&#x53D1;</li>
+<li>&#x652F;&#x6301;&#x6570;&#x767E;&#x4EBA;&#x7684;&#x5927;&#x578B;&#x9879;&#x76EE;</li>
+</ul>
+</li>
+<li>&#x7F3A;&#x70B9;<ul>
+<li>&#x534F;&#x540C;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x5168;&#x90E8;&#x7248;&#x672C;&#x5E93;</li>
+<li>&#x6307;&#x4EE4;&#x590D;&#x6742;</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="UtanDevelopGuide.html" class="navigation navigation-prev " aria-label="Previous page: 0901 友田开发规范">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="Svn.html" class="navigation navigation-next " aria-label="Next page: 0903 Svn">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"0903 版本管理","level":"1.2.3","depth":2,"next":{"title":"0903 Svn","level":"1.2.4","depth":2,"path":"FirstWeek/Svn.md","ref":"FirstWeek/Svn.md","articles":[]},"previous":{"title":"0901 友田开发规范","level":"1.2.2","depth":2,"path":"FirstWeek/UtanDevelopGuide.md","ref":"FirstWeek/UtanDevelopGuide.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"FirstWeek/VersionControl.md","mtime":"2020-09-07T11:33:03.317Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-07T11:33:26.022Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
