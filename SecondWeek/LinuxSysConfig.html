@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>0903 Svn · GitBook</title>
+        <title>0908 Linux系统设置 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="Git.html" />
+    <link rel="next" href="LinuxFileHandle.html" />
     
     
-    <link rel="prev" href="VersionControl.html" />
+    <link rel="prev" href="LinuxBasic.html" />
     
 
     </head>
@@ -116,9 +116,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.2.1" data-path="ScrumAgileThought.html">
+        <li class="chapter " data-level="1.2.1" data-path="../FirstWeek/ScrumAgileThought.html">
             
-                <a href="ScrumAgileThought.html">
+                <a href="../FirstWeek/ScrumAgileThought.html">
             
                     
                     0901 Scrum敏捷思想
@@ -129,9 +129,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.2" data-path="UtanDevelopGuide.html">
+        <li class="chapter " data-level="1.2.2" data-path="../FirstWeek/UtanDevelopGuide.html">
             
-                <a href="UtanDevelopGuide.html">
+                <a href="../FirstWeek/UtanDevelopGuide.html">
             
                     
                     0901 友田开发规范
@@ -142,9 +142,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.3" data-path="VersionControl.html">
+        <li class="chapter " data-level="1.2.3" data-path="../FirstWeek/VersionControl.html">
             
-                <a href="VersionControl.html">
+                <a href="../FirstWeek/VersionControl.html">
             
                     
                     0903 版本管理
@@ -155,9 +155,9 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.2.4" data-path="Svn.html">
+        <li class="chapter " data-level="1.2.4" data-path="../FirstWeek/Svn.html">
             
-                <a href="Svn.html">
+                <a href="../FirstWeek/Svn.html">
             
                     
                     0903 Svn
@@ -168,9 +168,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.5" data-path="Git.html">
+        <li class="chapter " data-level="1.2.5" data-path="../FirstWeek/Git.html">
             
-                <a href="Git.html">
+                <a href="../FirstWeek/Git.html">
             
                     
                     0903 Git
@@ -200,9 +200,9 @@
             <ul class="articles">
                 
     
-        <li class="chapter " data-level="1.3.1" data-path="../SecondWeek/LinuxBasic.html">
+        <li class="chapter " data-level="1.3.1" data-path="LinuxBasic.html">
             
-                <a href="../SecondWeek/LinuxBasic.html">
+                <a href="LinuxBasic.html">
             
                     
                     0907 Linux基础命令
@@ -213,9 +213,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.2" data-path="../SecondWeek/LinuxSysConfig.html">
+        <li class="chapter active" data-level="1.3.2" data-path="LinuxSysConfig.html">
             
-                <a href="../SecondWeek/LinuxSysConfig.html">
+                <a href="LinuxSysConfig.html">
             
                     
                     0908 Linux系统设置
@@ -226,9 +226,9 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.3" data-path="../SecondWeek/LinuxFileHandle.html">
+        <li class="chapter " data-level="1.3.3" data-path="LinuxFileHandle.html">
             
-                <a href="../SecondWeek/LinuxFileHandle.html">
+                <a href="LinuxFileHandle.html">
             
                     
                     0908 Linux文件处理
@@ -274,7 +274,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >0903 Svn</a>
+        <a href=".." >0908 Linux系统设置</a>
     </h1>
 </div>
 
@@ -289,79 +289,106 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="svn">SVN</h1>
-<h2 id="&#x6807;&#x51C6;&#x76EE;&#x5F55;&#x5E03;&#x5C40;">&#x6807;&#x51C6;&#x76EE;&#x5F55;&#x5E03;&#x5C40;</h2>
-<blockquote>
+                                <h1 id="linux&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;">Linux&#x7CFB;&#x7EDF;&#x8BBE;&#x7F6E;</h1>
+<h2 id="&#x65F6;&#x533A;&#x8BBE;&#x7F6E;">&#x65F6;&#x533A;&#x8BBE;&#x7F6E;</h2>
 <ul>
-<li>trunk&#xFF08;&#x4E3B;&#x5E72;&#xFF09;</li>
-<li>branches&#xFF08;&#x5206;&#x652F;&#xFF09;<ul>
-<li>&#x7EF4;&#x62A4;&#x5206;&#x652F;</li>
-<li>&#x65B0;&#x7279;&#x6027;&#x5206;&#x652F;</li>
-<li>&#x7F3A;&#x9677;&#x4FEE;&#x590D;&#x5206;&#x652F;</li>
-<li>...</li>
+<li>&#x67E5;&#x770B;&#x65F6;&#x533A; <code>date -R</code></li>
+<li>&#x4FEE;&#x6539;&#x65F6;&#x533A; <code>tzselect</code><ul>
+<li>&#x8FD8;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x66FF;&#x6362;&#x65F6;&#x533A;&#x6587;&#x4EF6;</li>
+<li>&#x8FD8;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x94FE;&#x63A5;&#x6587;&#x4EF6; <code>cp /usr/share/zoneinfo/$&#x4E3B;&#x65F6;&#x533A;/$&#x6B21;&#x65F6;&#x533A; /etc/localtime</code></li>
 </ul>
 </li>
-<li>tags&#xFF08;&#x6807;&#x7B7E;/&#x5FEB;&#x7167;&#xFF09;<ul>
-<li>&#x7248;&#x672C;&#x53D1;&#x5E03;&#x7559;&#x6863;</li>
 </ul>
-</li>
+<hr>
+<h2 id="&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;</h2>
+<blockquote>
+<p>&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6587;&#x4EF6;&#x4ECB;&#x7ECD;&#x53C2;&#x8003;<a href="LinuxBasic">linux&#x7CFB;&#x7EDF;&#x57FA;&#x7840;</a></p>
+<ul>
+<li>&#x793A;&#x4F8B;&#x4E00;&#xFF1A;JDK
+```
+1.1 &#x5B89;&#x88C5;JDK
+cd /opt/softwares
+tar zxvf jdk-8u131-linux-x64.tar.gz -C ..</li>
 </ul>
 </blockquote>
-<h2 id="&#x5F00;&#x53D1;&#x65B9;&#x5F0F;">&#x5F00;&#x53D1;&#x65B9;&#x5F0F;</h2>
-<h3 id="&#x96C6;&#x4E2D;&#x5F0F;">&#x96C6;&#x4E2D;&#x5F0F;</h3>
-<blockquote>
+<p>1.2 &#x7F16;&#x8F91;/etc/profile
+export JAVA_HOME=/opt/jdk1.8.0_131
+export JRE_HOME=$JAVA_HOME/jre
+export CLASSPATH=./:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
+export PATH=$JAVA_HOME/bin:$PATH</p>
+<p>1.3 &#x4F7F;&#x914D;&#x7F6E;&#x751F;&#x6548;
+source /etc/profile </p>
+<p>1.4 &#x9A8C;&#x8BC1;
+java -version&#x4E0E;echo $JAVA_HOME</p>
+<pre><code>- &#x793A;&#x4F8B;&#x4E8C;&#xFF1A;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x6700;&#x5927;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x6570;
+</code></pre><p>2.1 &#x4E34;&#x65F6;&#x4FEE;&#x6539;
+ulimit -HSn 65535</p>
+<p>2.2 &#x6C38;&#x4E45;&#x4FEE;&#x6539;
+vi /etc/security/limits.conf</p>
+<p>&#x4FEE;&#x6539;&#x5BF9;&#x5E94;&#x5185;&#x5BB9;&#x4E3A;&#xFF1A;</p>
 <ul>
-<li>&#x505A;&#x6CD5;<ul>
-<li>&#x4F7F;&#x7528;trunk&#x8FDB;&#x884C;&#x4E3B;&#x8981;&#x5F00;&#x53D1;</li>
-<li>&#x67D0;&#x4E00;&#x9636;&#x6BB5;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x653E;&#x5165;tags&#x5B58;&#x6863;</li>
-<li>&#x5DF2;&#x53D1;&#x884C;&#x7248;&#x672C;&#x51FA;&#x73B0;&#x95EE;&#x9898;&#x65F6;&#xFF0C;&#x627E;&#x5230;&#x5BF9;&#x5E94;tags&#xFF0C;&#x53D1;&#x5E03;branches&#x8FDB;&#x884C;&#x4FEE;&#x6539;</li>
+<li>soft nofile 65535</li>
+<li>hard nofile 65535
+```</li>
 </ul>
-</li>
-<li>&#x4F18;&#x70B9;<ul>
-<li>&#x7BA1;&#x7406;&#x7B80;&#x5355;</li>
-</ul>
-</li>
-<li>&#x7F3A;&#x70B9;<ul>
-<li>&#x6A21;&#x5757;&#x8F83;&#x591A;&#x4E14;&#x5C0F;&#x56E2;&#x961F;&#x6BD4;&#x8F83;&#x591A;&#x65F6;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x4EA7;&#x751F;&#x4EE3;&#x7801;&#x51B2;&#x7A81;</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<h3 id="&#x5206;&#x6563;&#x5F0F;">&#x5206;&#x6563;&#x5F0F;</h3>
-<blockquote>
+<hr>
+<h2 id="&#x4FEE;&#x6539;&#x5185;&#x6838;&#x8BBE;&#x7F6E;">&#x4FEE;&#x6539;&#x5185;&#x6838;&#x8BBE;&#x7F6E;</h2>
 <ul>
-<li>&#x505A;&#x6CD5;<ul>
-<li>&#x4F7F;&#x7528;branches&#x8FDB;&#x884C;&#x4E3B;&#x8981;&#x5F00;&#x53D1;</li>
-<li>&#x67D0;&#x4E00;&#x9636;&#x6BB5;&#x7ED3;&#x675F;&#x540E;&#xFF0C;&#x653E;&#x5165;tags&#x5B58;&#x6863;&#xFF0C;&#x5E76;&#x5728;branches&#x4E2D;&#x521B;&#x5EFA;&#x65B0;&#x9636;&#x6BB5;&#x7684;&#x76EE;&#x5F55;</li>
-<li>&#x9009;&#x62E9;&#x6027;&#x7684;&#x8FDB;&#x884C;&#x4EE3;&#x7801;&#x5408;&#x5E76;&#xFF0C;&#x653E;&#x5165;trunk&#x4E2D;&#x8FDB;&#x884C;&#x53D1;&#x5E03;</li>
+<li>&#x6253;&#x5F00;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;<code>vim /etc/sysctl.conf</code></li>
+<li>&#x53C2;&#x6570;&#x9879;&#x8BF4;&#x660E;&#xFF1A;</li>
 </ul>
-</li>
-<li>&#x4F18;&#x70B9;<ul>
-<li>&#x5404;&#x81EA;&#x5F00;&#x53D1;&#x72EC;&#x7ACB;&#xFF0C;&#x4E92;&#x4E0D;&#x5F71;&#x54CD;</li>
-</ul>
-</li>
-<li>&#x7F3A;&#x70B9;<ul>
-<li>&#x7BA1;&#x7406;&#x590D;&#x6742;&#xFF0C;&#x4EE3;&#x7801;&#x5408;&#x5E76;&#x9EBB;&#x70E6;</li>
-</ul>
-</li>
-</ul>
-</blockquote>
-<h2 id="&#x53CB;&#x7530;&#x65B9;&#x5F0F;">&#x53CB;&#x7530;&#x65B9;&#x5F0F;</h2>
-<h3 id="&#x76EE;&#x5F55;">&#x76EE;&#x5F55;</h3>
-<blockquote>
+<table>
+<thead>
+<tr>
+<th>&#x53C2;&#x6570;&#x540D;&#x79F0;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>net.ipv4.tcp_syncookies=1</td>
+<td>&#x5F00;&#x542F;SYNCookies&#x3002;&#x5F53;&#x51FA;&#x73B0;SYN&#x7B49;&#x5F85;&#x961F;&#x5217;&#x6EA2;&#x51FA;&#x65F6;&#xFF0C;&#x542F;&#x7528;cookies&#x6765;&#x5904;&#x7406;&#xFF0C;&#x53EF;&#x9632;&#x8303;&#x5C11;&#x91CF;SYN<em>*</em>&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF0C;&#x8868;&#x793A;&#x5173;&#x95ED;</td>
+</tr>
+<tr>
+<td>net.ipv4.tcp_tw_reuse=1</td>
+<td>&#x5F00;&#x542F;&#x91CD;&#x7528;&#x3002;&#x5141;&#x8BB8;&#x5C06;TIME-WAIT sockets&#x91CD;&#x65B0;&#x7528;&#x4E8E;&#x65B0;&#x7684;TCP&#x8FDE;&#x63A5;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF0C;&#x8868;&#x793A;&#x5173;&#x95ED;</td>
+</tr>
+<tr>
+<td>net.ipv4.tcp_tw_recycle=1</td>
+<td>&#x5F00;&#x542F;TCP&#x8FDE;&#x63A5;&#x4E2D;TIME-WAIT sockets&#x7684;&#x5FEB;&#x901F;&#x56DE;&#x6536;&#xFF0C;&#x9ED8;&#x8BA4;&#x4E3A;0&#xFF0C;&#x8868;&#x793A;&#x5173;&#x95ED;</td>
+</tr>
+<tr>
+<td>net.ipv4.tcp_fin_timeout=30</td>
+<td>&#x7CFB;&#x7D71;&#x9ED8;&#x8BA4;&#x7684;TIMEOUT&#x65F6;&#x95F4;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="&#x6545;&#x969C;&#x6392;&#x9664;">&#x6545;&#x969C;&#x6392;&#x9664;</h2>
 <ul>
-<li>trunk&#xFF1A;&#x7528;&#x4E8E;&#x7248;&#x672C;&#x5F00;&#x53D1;&#x63D0;&#x4EA4;&#x4EE3;&#x7801;</li>
-<li>branches&#xFF1A;&#x7528;&#x4E8E;&#x5B9A;&#x5236;&#x7248;&#x672C;&#x548C;Bug&#x4FEE;&#x590D;</li>
-<li>tags&#xFF1A;&#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x548C;&#x4FDD;&#x5B58;&#x5DF2;&#x53D1;&#x5E03;&#x7248;&#x672C;</li>
+<li>&#x78C1;&#x76D8;<ul>
+<li>df -h</li>
 </ul>
-</blockquote>
-<h3 id="&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;">&#x5F00;&#x53D1;&#x8FC7;&#x7A0B;</h3>
-<blockquote>
-<ul>
-<li>&#x521D;&#x671F;&#x96C6;&#x4E2D;&#x5F00;&#x53D1;</li>
-<li>&#x540E;&#x671F;&#x5206;&#x6563;&#x5F00;&#x53D1;</li>
+</li>
+<li>&#x5185;&#x5B58;<ul>
+<li>free -m</li>
 </ul>
-</blockquote>
+</li>
+<li>&#x8FDB;&#x7A0B;<ul>
+<li>ps -ef | grep XXX</li>
+</ul>
+</li>
+<li>&#x7AEF;&#x53E3;&#x4FA6;&#x542C;&#x60C5;&#x51B5;<ul>
+<li>netstat -tunlp | grep xxx</li>
+<li>telnet ip port</li>
+</ul>
+</li>
+<li>&#x7CFB;&#x7EDF;&#x8D1F;&#x8F7D;<ul>
+<li>top</li>
+<li>vmstat 3 10</li>
+</ul>
+</li>
+</ul>
 
                                 
                                 </section>
@@ -389,12 +416,12 @@
 
             
                 
-                <a href="VersionControl.html" class="navigation navigation-prev " aria-label="Previous page: 0903 版本管理">
+                <a href="LinuxBasic.html" class="navigation navigation-prev " aria-label="Previous page: 0907 Linux基础命令">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="Git.html" class="navigation navigation-next " aria-label="Next page: 0903 Git">
+                <a href="LinuxFileHandle.html" class="navigation navigation-next " aria-label="Next page: 0908 Linux文件处理">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -405,7 +432,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"0903 Svn","level":"1.2.4","depth":2,"next":{"title":"0903 Git","level":"1.2.5","depth":2,"path":"FirstWeek/Git.md","ref":"FirstWeek/Git.md","articles":[]},"previous":{"title":"0903 版本管理","level":"1.2.3","depth":2,"path":"FirstWeek/VersionControl.md","ref":"FirstWeek/VersionControl.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"FirstWeek/Svn.md","mtime":"2020-09-07T02:59:27.635Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-10T06:43:57.063Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"0908 Linux系统设置","level":"1.3.2","depth":2,"next":{"title":"0908 Linux文件处理","level":"1.3.3","depth":2,"path":"SecondWeek/LinuxFileHandle.md","ref":"SecondWeek/LinuxFileHandle.md","articles":[]},"previous":{"title":"0907 Linux基础命令","level":"1.3.1","depth":2,"path":"SecondWeek/LinuxBasic.md","ref":"SecondWeek/LinuxBasic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"SecondWeek/LinuxSysConfig.md","mtime":"2020-09-10T06:41:11.545Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-10T06:43:57.063Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
