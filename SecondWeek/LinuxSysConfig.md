@@ -11,7 +11,9 @@
 
 ## 环境变量设置
 >环境变量文件介绍参考[linux系统基础](/SecondWeek/LinuxBasic)
+
 - 示例一：JDK
+
 ```
 1.1 安装JDK
 cd /opt/softwares
@@ -30,6 +32,7 @@ source /etc/profile
 java -version与echo $JAVA_HOME
 ```
 - 示例二：修改用户最大文件打开数
+
 ```
 2.1 临时修改
 ulimit -HSn 65535

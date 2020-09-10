@@ -303,35 +303,38 @@
 <h2 id="&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;">&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x8BBE;&#x7F6E;</h2>
 <blockquote>
 <p>&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x6587;&#x4EF6;&#x4ECB;&#x7ECD;&#x53C2;&#x8003;<a href="LinuxBasic">linux&#x7CFB;&#x7EDF;&#x57FA;&#x7840;</a></p>
-<ul>
-<li>&#x793A;&#x4F8B;&#x4E00;&#xFF1A;JDK
-```
-1.1 &#x5B89;&#x88C5;JDK
-cd /opt/softwares
-tar zxvf jdk-8u131-linux-x64.tar.gz -C ..</li>
-</ul>
 </blockquote>
-<p>1.2 &#x7F16;&#x8F91;/etc/profile
+<ul>
+<li>&#x793A;&#x4F8B;&#x4E00;&#xFF1A;JDK</li>
+</ul>
+<pre><code>1.1 &#x5B89;&#x88C5;JDK
+cd /opt/softwares
+tar zxvf jdk-8u131-linux-x64.tar.gz -C ..
+
+1.2 &#x7F16;&#x8F91;/etc/profile
 export JAVA_HOME=/opt/jdk1.8.0_131
 export JRE_HOME=$JAVA_HOME/jre
 export CLASSPATH=./:$JAVA_HOME/lib:$JAVA_HOME/jre/lib
-export PATH=$JAVA_HOME/bin:$PATH</p>
-<p>1.3 &#x4F7F;&#x914D;&#x7F6E;&#x751F;&#x6548;
-source /etc/profile </p>
-<p>1.4 &#x9A8C;&#x8BC1;
-java -version&#x4E0E;echo $JAVA_HOME</p>
-<pre><code>- &#x793A;&#x4F8B;&#x4E8C;&#xFF1A;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x6700;&#x5927;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x6570;
-</code></pre><p>2.1 &#x4E34;&#x65F6;&#x4FEE;&#x6539;
-ulimit -HSn 65535</p>
-<p>2.2 &#x6C38;&#x4E45;&#x4FEE;&#x6539;
-vi /etc/security/limits.conf</p>
-<p>&#x4FEE;&#x6539;&#x5BF9;&#x5E94;&#x5185;&#x5BB9;&#x4E3A;&#xFF1A;</p>
-<ul>
-<li>soft nofile 65535</li>
-<li>hard nofile 65535
-```</li>
+export PATH=$JAVA_HOME/bin:$PATH
+
+1.3 &#x4F7F;&#x914D;&#x7F6E;&#x751F;&#x6548;
+source /etc/profile 
+
+1.4 &#x9A8C;&#x8BC1;
+java -version&#x4E0E;echo $JAVA_HOME
+</code></pre><ul>
+<li>&#x793A;&#x4F8B;&#x4E8C;&#xFF1A;&#x4FEE;&#x6539;&#x7528;&#x6237;&#x6700;&#x5927;&#x6587;&#x4EF6;&#x6253;&#x5F00;&#x6570;</li>
 </ul>
-<hr>
+<pre><code>2.1 &#x4E34;&#x65F6;&#x4FEE;&#x6539;
+ulimit -HSn 65535
+
+2.2 &#x6C38;&#x4E45;&#x4FEE;&#x6539;
+vi /etc/security/limits.conf
+
+&#x4FEE;&#x6539;&#x5BF9;&#x5E94;&#x5185;&#x5BB9;&#x4E3A;&#xFF1A;
+* soft nofile 65535
+* hard nofile 65535
+</code></pre><hr>
 <h2 id="&#x4FEE;&#x6539;&#x5185;&#x6838;&#x8BBE;&#x7F6E;">&#x4FEE;&#x6539;&#x5185;&#x6838;&#x8BBE;&#x7F6E;</h2>
 <ul>
 <li>&#x6253;&#x5F00;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#xFF1A;<code>vim /etc/sysctl.conf</code></li>
@@ -432,7 +435,7 @@ vi /etc/security/limits.conf</p>
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"0908 Linux系统设置","level":"1.3.2","depth":2,"next":{"title":"0908 Linux文件处理","level":"1.3.3","depth":2,"path":"SecondWeek/LinuxFileHandle.md","ref":"SecondWeek/LinuxFileHandle.md","articles":[]},"previous":{"title":"0907 Linux基础命令","level":"1.3.1","depth":2,"path":"SecondWeek/LinuxBasic.md","ref":"SecondWeek/LinuxBasic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"SecondWeek/LinuxSysConfig.md","mtime":"2020-09-10T06:41:11.545Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-10T06:43:57.063Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"0908 Linux系统设置","level":"1.3.2","depth":2,"next":{"title":"0908 Linux文件处理","level":"1.3.3","depth":2,"path":"SecondWeek/LinuxFileHandle.md","ref":"SecondWeek/LinuxFileHandle.md","articles":[]},"previous":{"title":"0907 Linux基础命令","level":"1.3.1","depth":2,"path":"SecondWeek/LinuxBasic.md","ref":"SecondWeek/LinuxBasic.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"SecondWeek/LinuxSysConfig.md","mtime":"2020-09-10T06:58:22.181Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-09-10T06:58:40.510Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
